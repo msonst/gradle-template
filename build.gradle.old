@@ -1,0 +1,22 @@
+plugins {
+	id 'java'
+}
+/*
+apply from: file("${rootDir}/buildSrc/MyPlugin.groovy")
+
+task buildWithReplaceAndCopy(type: ReplaceAndCopyTask) {
+    dependsOn 'replaceAndCopy'
+    files = ['README.md', 'CONTRIBUTING.md']
+    inputDir = file('templates')
+    outputDir = project.rootDir
+    substitutions = [
+        '${AUTHOR}': 'Michael Sonst',
+        '${YEAR}': '2023',
+        '${GROUP}': 'com.corporate-startup',
+        '${GITUSER}': 'msonst',
+        '${GITBASE}': 'https://github.com/msonst'
+    ]
+}
+
+build.dependsOn buildWithReplaceAndCopy
+*/
